@@ -77,7 +77,7 @@
           <OutArgument x:TypeArguments="x:Int32">[redonmnum]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Int32">[new Random().Next(0,1000)]</InArgument>
+          <InArgument x:TypeArguments="x:Int32">[new Random().Next(0,10)]</InArgument>
         </Assign.Value>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
