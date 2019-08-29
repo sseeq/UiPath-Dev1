@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="System1_ExtractClientInformation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="508,1361" sap2010:WorkflowViewState.IdRef="System1_ExtractClientInformation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="System1_ExtractClientInformation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="508,1115" sap2010:WorkflowViewState.IdRef="System1_ExtractClientInformation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -48,10 +48,10 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_ExtractClientInformation" sap:VirtualizedContainerService.HintSize="468,1281" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_ExtractClientInformation" sap:VirtualizedContainerService.HintSize="468,1035" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="itemstring" />
-      <Variable x:TypeArguments="x:String" Name="midstring" />
+      <Variable x:TypeArguments="s:String[]" Name="midstring" />
       <Variable x:TypeArguments="x:String" Name="ClientID" />
       <Variable x:TypeArguments="x:String" Name="ClientName" />
       <Variable x:TypeArguments="x:String" Name="ClientCountry" />
@@ -61,29 +61,18 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'iexplore.exe ACME'" sap:VirtualizedContainerService.HintSize="430,1189" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="14b38e6a90d8e431064683dc122102ee" Selector="&lt;html title='ACME System 1 - Work Items' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'iexplore.exe ACME'" sap:VirtualizedContainerService.HintSize="430,943" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="14b38e6a90d8e431064683dc122102ee" Selector="&lt;html title='ACME System 1 - Work Items' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,1043" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="qqqq" />
-            </Sequence.Variables>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,797" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
-              <ui:GetValue.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d5fd5b96b34f5ec772d1bca1b16f8acc" Selector="&lt;webctrl idx='1' tag='P' /&gt;&#xD;&#xA;" WaitForReady="COMPLETE" />
-              </ui:GetValue.Target>
-              <ui:GetValue.Value>
-                <OutArgument x:TypeArguments="x:String">[qqqq]</OutArgument>
-              </ui:GetValue.Value>
-            </ui:GetValue>
             <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b95b5a81fd914ec00997c8faf499cd69" Selector="&lt;webctrl idx='1' tag='P' /&gt;" WaitForReady="INTERACTIVE" />
@@ -92,20 +81,20 @@
                 <OutArgument x:TypeArguments="x:String">[itemstring]</OutArgument>
               </ui:GetValue.Value>
             </ui:GetValue>
+            <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[midstring]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Split(itemstring.Replace(vbcrlf,"|").Replace("Client ID: ","").Replace("Client Name: ","").Replace("Client Country: ",""),"|")]</InArgument>
+              </Assign.Value>
+            </Assign>
             <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[ClientID]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Split(itemstring,"Client Name:")(0).Replace("Client ID: ","").Replace("\r\n","")]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_2">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[midstring]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Split(itemstring,"Client Name:")(0)]</InArgument>
+                <InArgument x:TypeArguments="x:String">[midstring(0)]</InArgument>
               </Assign.Value>
             </Assign>
             <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_3">
@@ -113,7 +102,7 @@
                 <OutArgument x:TypeArguments="x:String">[ClientName]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Split(itemstring,"Client Country: ")(0).Replace(midstring,"").Replace("Client Name: ","")]</InArgument>
+                <InArgument x:TypeArguments="x:String">[midstring(1)]</InArgument>
               </Assign.Value>
             </Assign>
             <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_4">
@@ -121,12 +110,11 @@
                 <OutArgument x:TypeArguments="x:String">[ClientCountry]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Split(itemstring,"Client Country: ")(1)]</InArgument>
+                <InArgument x:TypeArguments="x:String">[midstring(2)]</InArgument>
               </Assign.Value>
             </Assign>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[qqqq]" />
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[ClientID.Replace(&quot;&amp;#xD;&amp;#xA;&quot;,&quot;&quot;)+&quot; - &quot;+ClientName+&quot; - &quot;+ClientCountry]" />
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[itemstring.Replace(&quot;Client ID: &quot;,&quot;&quot;).Replace(&quot;Client Name: &quot;,&quot;&quot;).Replace(&quot;Client Country: &quot;,&quot;&quot;).Replace(&quot;\r\n&quot;,&quot;|&quot;)]" TopMost="True" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[midstring(0)+&quot; - &quot;+midstring(1)+&quot; - &quot;+midstring(2)]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[ClientID+&quot; - &quot;+ClientName+&quot; - &quot;+ClientCountry]" TopMost="True" />
           </Sequence>
         </ActivityAction>
       </ui:BrowserScope.Body>
