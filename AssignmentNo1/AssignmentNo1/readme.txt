@@ -3,6 +3,6 @@ https://acme-test.uipath.com/account/login
 
 
 
-SHA1 Online URL
-System1 URL
+SHA1OnlineURL
+System1URL
 LoginUP             ---System1_Credential
