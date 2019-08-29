@@ -1,7 +1,7 @@
 {
   "name": "AssignmentNo1",
   "description": "Robotic Enterprise Framework",
-  "main": "ReadLoginUP.xaml",
+  "main": "cs.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.6.2]",
