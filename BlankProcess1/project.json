@@ -1,7 +1,7 @@
 {
   "name": "BlankProcess1",
   "description": "Blank Process1",
-  "main": "Main.xaml",
+  "main": "messagebox.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.6.2]",
     "UiPath.Mail.Activities": "[1.5.1]",
