@@ -1,2 +1,2 @@
-InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
-175626,"IT Support",111351,22270.2,133621,RON,2017-04-17
+InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+837563,"IT Support",2017-04-01,58160,11632,69792,CAD

@@ -1,2 +1,2 @@
-InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
-703407,"Various paper supplies",2017-03-23,81781,16356.2,98137.2,CAD
+InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
+312831,"Beverages and Catering",166298,33259.6,199558,CAD,2017-03-11

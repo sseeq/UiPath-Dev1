@@ -1,2 +1,2 @@
-InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
-895319,"IT Support",7521,1504.2,9025.2,EUR,2017-06-20
+InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+182409,"Waste management services",2017-06-25,193388,38677.6,232066,RON
